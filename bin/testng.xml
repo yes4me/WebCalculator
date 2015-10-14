@@ -1,0 +1,17 @@
+<!-- 
+	In Eclipse, right click on this XML file, and "Run as>TestNG suite"
+	Can be any XML file. Does not have to be named testNG.xml
+-->
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="TestAll">
+	<test name="smokeTesting">
+		<classes>
+			<class name="com.thomas.tests.WebCalculator">
+				<methods>
+					<include name="smokeTesting"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>
