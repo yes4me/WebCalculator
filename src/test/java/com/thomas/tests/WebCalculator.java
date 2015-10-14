@@ -37,17 +37,18 @@ public class WebCalculator {
 	@DataProvider(name="WebCalculatorCSV")
 	public String[][] WebCalculatorCSV()
 	{
-		MyCSV myExcel		= new MyCSV();
+		MyCSV myCSV		= new MyCSV();
 		//Get The data from the second line
-		List<String[]> data	= myExcel.read("WebCalculator.csv", 1);
+		List<String[]> data	= myCSV.read("WebCalculator.csv", 1);
 
 		String[][] result = MyCollection.convertStringArray(data);
 
 		//Get rid of comma everywhere
 		for (int i=0; i<result.length; i++)
 		{
-			for (int j=0; j<result[i].length; j++)
-				result[i][j] = result[i][j].replaceAll(",", "");
+			//for (int j=0; j<result[i].length; j++)
+			//	result[i][j] = result[i][j].replaceAll(",", "");
+			result[i][3] = result[i][3].replaceAll(",", "");
 		}
 		return result;
 	}
@@ -60,16 +61,16 @@ public class WebCalculator {
 		page.visit();
 		page.windowsMaximize();
 		
-		page.pressButton(number1);
+		page.pressButtons(number1);
 		page.pressOperation(operation);
-		page.pressButton(number2);
-		page.pressButton("=");
+		page.pressButtons(number2);
+		page.pressButtons("=");
 
 		String result = page.getConsole();
 		assertEquals(result, expectedResult);
 	}
 
-	@Test(groups="smokeTesting", dataProvider="WebCalculatorCSV", enabled = false)
+	@Test(groups="smokeTesting", dataProvider="WebCalculatorCSV", enabled = true)
 	public void basicOperationUsingConsole(String number1, String number2, String operation, String expectedResult) {
 		System.out.println("TESTING: basicOperationUsingConsole");
 
@@ -79,10 +80,9 @@ public class WebCalculator {
 		
 		String equation = number1 + page.convertOperation(operation) + number2; 
 		page.setConsole(equation);
-		page.pressButton("=");
+		page.pressButtons("=");
 
 		String result = page.getConsole();
-		System.out.println("==>"+ result);
 		assertEquals(result, expectedResult);
 	}
 }

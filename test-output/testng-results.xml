@@ -1,20 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="4" passed="4">
+<testng-results skipped="0" failed="0" total="8" passed="8">
   <reporter-output>
   </reporter-output>
-  <suite name="TestAll" duration-ms="63230" started-at="2015-10-14T03:50:27Z" finished-at="2015-10-14T03:51:30Z">
+  <suite name="TestAll" duration-ms="102117" started-at="2015-10-14T19:27:38Z" finished-at="2015-10-14T19:29:20Z">
     <groups>
       <group name="smokeTesting">
         <method signature="WebCalculator.basicOperationUsingButtons(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.thomas.tests.WebCalculator@5c0369c4]" name="basicOperationUsingButtons" class="com.thomas.tests.WebCalculator"/>
+        <method signature="WebCalculator.basicOperationUsingConsole(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.thomas.tests.WebCalculator@5c0369c4]" name="basicOperationUsingConsole" class="com.thomas.tests.WebCalculator"/>
       </group> <!-- smokeTesting -->
     </groups>
-    <test name="smokeTesting" duration-ms="63230" started-at="2015-10-14T03:50:27Z" finished-at="2015-10-14T03:51:30Z">
+    <test name="smokeTesting" duration-ms="102117" started-at="2015-10-14T19:27:38Z" finished-at="2015-10-14T19:29:20Z">
       <class name="com.thomas.tests.WebCalculator">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.thomas.tests.WebCalculator@5c0369c4]" name="setUp" is-config="true" duration-ms="3892" started-at="2015-10-13T20:50:27Z" finished-at="2015-10-13T20:50:31Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.thomas.tests.WebCalculator@5c0369c4]" name="setUp" is-config="true" duration-ms="4310" started-at="2015-10-14T12:27:38Z" finished-at="2015-10-14T12:27:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="basicOperationUsingButtons(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.thomas.tests.WebCalculator@5c0369c4]" name="basicOperationUsingButtons" duration-ms="11096" started-at="2015-10-13T20:50:31Z" data-provider="WebCalculatorCSV" finished-at="2015-10-13T20:50:42Z">
+        <test-method status="PASS" signature="basicOperationUsingButtons(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.thomas.tests.WebCalculator@5c0369c4]" name="basicOperationUsingButtons" duration-ms="8305" started-at="2015-10-14T12:27:42Z" data-provider="WebCalculatorCSV" finished-at="2015-10-14T12:27:51Z">
           <params>
             <param index="0">
               <value>
@@ -40,15 +41,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- basicOperationUsingButtons -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.thomas.tests.WebCalculator@5c0369c4]" name="tearDown" is-config="true" duration-ms="1994" started-at="2015-10-13T20:50:42Z" finished-at="2015-10-13T20:50:44Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.thomas.tests.WebCalculator@5c0369c4]" name="tearDown" is-config="true" duration-ms="2219" started-at="2015-10-14T12:27:51Z" finished-at="2015-10-14T12:27:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.thomas.tests.WebCalculator@5c0369c4]" name="setUp" is-config="true" duration-ms="2374" started-at="2015-10-13T20:50:44Z" finished-at="2015-10-13T20:50:47Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.thomas.tests.WebCalculator@5c0369c4]" name="setUp" is-config="true" duration-ms="2739" started-at="2015-10-14T12:27:53Z" finished-at="2015-10-14T12:27:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="basicOperationUsingButtons(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.thomas.tests.WebCalculator@5c0369c4]" name="basicOperationUsingButtons" duration-ms="10718" started-at="2015-10-13T20:50:47Z" data-provider="WebCalculatorCSV" finished-at="2015-10-13T20:50:57Z">
+        <test-method status="PASS" signature="basicOperationUsingButtons(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.thomas.tests.WebCalculator@5c0369c4]" name="basicOperationUsingButtons" duration-ms="8314" started-at="2015-10-14T12:27:56Z" data-provider="WebCalculatorCSV" finished-at="2015-10-14T12:28:04Z">
           <params>
             <param index="0">
               <value>
@@ -74,15 +75,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- basicOperationUsingButtons -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.thomas.tests.WebCalculator@5c0369c4]" name="tearDown" is-config="true" duration-ms="1676" started-at="2015-10-13T20:50:57Z" finished-at="2015-10-13T20:50:59Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.thomas.tests.WebCalculator@5c0369c4]" name="tearDown" is-config="true" duration-ms="1780" started-at="2015-10-14T12:28:04Z" finished-at="2015-10-14T12:28:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.thomas.tests.WebCalculator@5c0369c4]" name="setUp" is-config="true" duration-ms="2310" started-at="2015-10-13T20:50:59Z" finished-at="2015-10-13T20:51:01Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.thomas.tests.WebCalculator@5c0369c4]" name="setUp" is-config="true" duration-ms="2771" started-at="2015-10-14T12:28:06Z" finished-at="2015-10-14T12:28:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="basicOperationUsingButtons(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.thomas.tests.WebCalculator@5c0369c4]" name="basicOperationUsingButtons" duration-ms="11766" started-at="2015-10-13T20:51:01Z" data-provider="WebCalculatorCSV" finished-at="2015-10-13T20:51:13Z">
+        <test-method status="PASS" signature="basicOperationUsingButtons(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.thomas.tests.WebCalculator@5c0369c4]" name="basicOperationUsingButtons" duration-ms="9273" started-at="2015-10-14T12:28:08Z" data-provider="WebCalculatorCSV" finished-at="2015-10-14T12:28:18Z">
           <params>
             <param index="0">
               <value>
@@ -108,15 +109,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- basicOperationUsingButtons -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.thomas.tests.WebCalculator@5c0369c4]" name="tearDown" is-config="true" duration-ms="1680" started-at="2015-10-13T20:51:13Z" finished-at="2015-10-13T20:51:15Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.thomas.tests.WebCalculator@5c0369c4]" name="tearDown" is-config="true" duration-ms="1849" started-at="2015-10-14T12:28:18Z" finished-at="2015-10-14T12:28:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.thomas.tests.WebCalculator@5c0369c4]" name="setUp" is-config="true" duration-ms="2304" started-at="2015-10-13T20:51:15Z" finished-at="2015-10-13T20:51:17Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.thomas.tests.WebCalculator@5c0369c4]" name="setUp" is-config="true" duration-ms="2632" started-at="2015-10-14T12:28:20Z" finished-at="2015-10-14T12:28:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="basicOperationUsingButtons(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.thomas.tests.WebCalculator@5c0369c4]" name="basicOperationUsingButtons" duration-ms="11683" started-at="2015-10-13T20:51:17Z" data-provider="WebCalculatorCSV" finished-at="2015-10-13T20:51:29Z">
+        <test-method status="PASS" signature="basicOperationUsingButtons(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.thomas.tests.WebCalculator@5c0369c4]" name="basicOperationUsingButtons" duration-ms="9172" started-at="2015-10-14T12:28:22Z" data-provider="WebCalculatorCSV" finished-at="2015-10-14T12:28:31Z">
           <params>
             <param index="0">
               <value>
@@ -142,7 +143,143 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- basicOperationUsingButtons -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.thomas.tests.WebCalculator@5c0369c4]" name="tearDown" is-config="true" duration-ms="1658" started-at="2015-10-13T20:51:29Z" finished-at="2015-10-13T20:51:30Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.thomas.tests.WebCalculator@5c0369c4]" name="tearDown" is-config="true" duration-ms="1877" started-at="2015-10-14T12:28:31Z" finished-at="2015-10-14T12:28:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.thomas.tests.WebCalculator@5c0369c4]" name="setUp" is-config="true" duration-ms="2144" started-at="2015-10-14T12:28:33Z" finished-at="2015-10-14T12:28:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="basicOperationUsingConsole(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.thomas.tests.WebCalculator@5c0369c4]" name="basicOperationUsingConsole" duration-ms="7019" started-at="2015-10-14T12:28:35Z" data-provider="WebCalculatorCSV" finished-at="2015-10-14T12:28:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[423]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[525]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Multiplication]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[222075]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- basicOperationUsingConsole -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.thomas.tests.WebCalculator@5c0369c4]" name="tearDown" is-config="true" duration-ms="1696" started-at="2015-10-14T12:28:42Z" finished-at="2015-10-14T12:28:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.thomas.tests.WebCalculator@5c0369c4]" name="setUp" is-config="true" duration-ms="2339" started-at="2015-10-14T12:28:44Z" finished-at="2015-10-14T12:28:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="basicOperationUsingConsole(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.thomas.tests.WebCalculator@5c0369c4]" name="basicOperationUsingConsole" duration-ms="7655" started-at="2015-10-14T12:28:46Z" data-provider="WebCalculatorCSV" finished-at="2015-10-14T12:28:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[4000]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[200]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Division]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[20]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- basicOperationUsingConsole -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.thomas.tests.WebCalculator@5c0369c4]" name="tearDown" is-config="true" duration-ms="1897" started-at="2015-10-14T12:28:54Z" finished-at="2015-10-14T12:28:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.thomas.tests.WebCalculator@5c0369c4]" name="setUp" is-config="true" duration-ms="2620" started-at="2015-10-14T12:28:56Z" finished-at="2015-10-14T12:28:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="basicOperationUsingConsole(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.thomas.tests.WebCalculator@5c0369c4]" name="basicOperationUsingConsole" duration-ms="7813" started-at="2015-10-14T12:28:59Z" data-provider="WebCalculatorCSV" finished-at="2015-10-14T12:29:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[-234234]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[345345]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Addition]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[111111]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- basicOperationUsingConsole -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.thomas.tests.WebCalculator@5c0369c4]" name="tearDown" is-config="true" duration-ms="1821" started-at="2015-10-14T12:29:06Z" finished-at="2015-10-14T12:29:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.thomas.tests.WebCalculator@5c0369c4]" name="setUp" is-config="true" duration-ms="2661" started-at="2015-10-14T12:29:08Z" finished-at="2015-10-14T12:29:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="basicOperationUsingConsole(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.thomas.tests.WebCalculator@5c0369c4]" name="basicOperationUsingConsole" duration-ms="7278" started-at="2015-10-14T12:29:11Z" data-provider="WebCalculatorCSV" finished-at="2015-10-14T12:29:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[234823]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[-23094823]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Subtraction]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[23329646]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- basicOperationUsingConsole -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.thomas.tests.WebCalculator@5c0369c4]" name="tearDown" is-config="true" duration-ms="1866" started-at="2015-10-14T12:29:18Z" finished-at="2015-10-14T12:29:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

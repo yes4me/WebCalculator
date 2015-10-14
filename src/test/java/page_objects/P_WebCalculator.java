@@ -30,6 +30,8 @@ public class P_WebCalculator extends BasePage implements BasicPageObject {
 	@FindBy(id = "BtnCalc") private WebElement button_equal;
 	@FindBy(id = "BtnPlus") private WebElement button_plusSign;
 	@FindBy(id = "BtnMinus") private WebElement button_minusSign;
+	@FindBy(id = "BtnMult") private WebElement button_multiplySign;
+	@FindBy(id = "BtnDiv") private WebElement button_divideSign;
 
 
 	public P_WebCalculator(WebDriver driver) {
@@ -59,7 +61,7 @@ public class P_WebCalculator extends BasePage implements BasicPageObject {
 	}
 	
 	//Press a number using the buttons of the calculator
-	public boolean pressButton(String value)
+	public boolean pressButtons(String value)
 	{
 		for (int i=0; i<value.length(); i++)
 		{
@@ -83,8 +85,8 @@ public class P_WebCalculator extends BasePage implements BasicPageObject {
 				case '.': click(button_dot); break;
 				case '+': click(button_plusSign); break;
 				case '-': click(button_minusSign); break;
-				case '*': type(display_input, "*"); break;
-				case '/': type(display_input, "/"); break;
+				case '*': click(button_multiplySign); break;
+				case '/': click(button_divideSign); break;
 				case ',': break;
 				case ' ': break;
 				default : return false;
@@ -112,6 +114,6 @@ public class P_WebCalculator extends BasePage implements BasicPageObject {
 	//Press an operator using the button of the calculator
 	public boolean pressOperation(String operator)
 	{
-		return pressButton( convertOperation(operator) );
+		return pressButtons( convertOperation(operator) );
 	}
 }

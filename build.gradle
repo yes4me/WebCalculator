@@ -48,7 +48,7 @@ test {
 		suites 'src/main/resources/testng.xml'
 	}
 	include 'com/thomas/tests/**'
-	
+
 	/*
 	test.outputs.upToDateWhen { false }
 	reports.html.enabled = true
